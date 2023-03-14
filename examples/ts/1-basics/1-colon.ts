@@ -1,10 +1,10 @@
-let num: number = 42
+let num = 42
 // num = 'строчка'
 
 let num2 = 42
 // num = 'строчка'
 
-let classic: any = 42
+let classic: 42 | string = 42
 classic = 'string'
 
 const func = (num: number) => {
@@ -18,12 +18,16 @@ func(num)
 // это не как в c#
 // не меняет рантайм никак
 // просто утверждаём что эта штука полюбому такого типа
-func('string' as unknown as number)
+func('string' as any as number)
 
 let shit: unknown = ''
 shit = 2
 
-func(shit as number)
+if (typeof shit === 'number') {
+  func(shit)
+}
+
+type A = {a: string} extends { a: number } ? number : string
 
 
 // бесполезными являются(namespace, interface, enum)

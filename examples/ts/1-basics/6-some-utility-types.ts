@@ -1,11 +1,10 @@
-import { CSSProperties } from 'react'
 
 type ButtonVariant = 'red' | 'green' | 'yellow'
 
-const buttonVariantsToStyle: Record<ButtonVariant, CSSProperties> = {
-  red: {background: "red"},
-  green: {background: "green"},
-  yellow: {background: "yellow"}
+const buttonVariantsToStyle: Record<ButtonVariant, number> = {
+  red: 1,
+  green: 2,
+  yellow: 3
 }
 
 const variant: ButtonVariant = 'red'

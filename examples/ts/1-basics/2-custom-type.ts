@@ -3,7 +3,8 @@ type Obj = {
   value: number
   gigaConst: 'secretConst'
   func: (arg1: number, arg2: string) => boolean
-  optionalField?: string
+  optionalField?: string,
+  nullableField: string | null
 }
 
 const obj: Obj = {
@@ -11,5 +12,12 @@ const obj: Obj = {
   value: 2,
   gigaConst: 'secretConst',
   func: (arg1, arg2) => arg1 === Number(arg2),
-  optionalField: ''
+  // optionalField: '',
+  nullableField: null
 }
+
+obj.optionalField
+
+// const func = ({optionalField = ''}: Obj) => {
+//
+// }

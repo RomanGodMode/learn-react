@@ -5,3 +5,9 @@ const obj = {
 }
 
 type Obj = typeof obj
+
+const obj2: Obj = {
+  a: 42,
+  b: '',
+  func: value => value,
+}

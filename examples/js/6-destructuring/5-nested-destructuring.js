@@ -7,6 +7,7 @@ const obj = {
   }
 }
 
-const {a: { b: {value1, value2: renamedValue2} }} = obj
+const {a: { b: {value1, value2: renamedValue2, value3: ren = 'Норм' } }} = obj
 console.log('value1', value1)
 console.log('value2', renamedValue2)
+console.log('value3', ren)
