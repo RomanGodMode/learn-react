@@ -12,7 +12,7 @@ const func = (num: number) => {
 }
 // func('sda')
 // func()
-func(classic)
+// func(classic)
 func(num)
 
 // это не как в c#

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+  localStorage.setItem('key', "42")
+  console.log(localStorage.getItem('key'));
+
+  localStorage.setItem('json', JSON.stringify({a: 1, b: 2}))
+  console.log(JSON.parse(localStorage.getItem('json')));
+
+  // Browser Object Model (BOM) - обьектная модель браузера
+  // это обьекты позволяющие взаимодействовать со всякими браузерными приколами помимо dom такими как:
+  // localStorage, sessionStorage, cookie
+  // navigator(информация о компьютере и браузере пользователя)
+  // location(информация об урле)
+  // history(обьект позволяющий управлять историей браузера)
+</script>
+</body>
+</html>
