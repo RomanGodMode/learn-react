@@ -24,12 +24,12 @@ export const ReactExample3_2_2 = () => {
   const increment = () => setCounter(counter + 1)
   const decrement = () => setCounter(counter - 1)
 
-  // useEffect(() => {
-  //   console.log('Делаем грязюку')
-  //   return () => {
-  //     console.log('Убираем грязюку')
-  //   }
-  // }, [counter])
+  useEffect(() => {
+    console.log('Делаем грязюку')
+    return () => {
+      console.log('Убираем грязюку')
+    }
+  }, [counter])
 
   const isEven = counter % 2 === 0
 

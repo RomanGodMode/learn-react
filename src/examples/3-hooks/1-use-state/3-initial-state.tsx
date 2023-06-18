@@ -9,8 +9,8 @@ const hardComputation = () => {
 }
 
 export const ReactExample3_1_3 = () => {
-  const [counter, setCounter] = useState(hardComputation())
-  // const [counter, setCounter] = useState(() => hardComputation())
+  // const [counter, setCounter] = useState(hardComputation())
+  const [counter, setCounter] = useState(() => hardComputation())
 
   return (
     <div>

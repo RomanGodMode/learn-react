@@ -20,6 +20,9 @@ func(num)
 // просто утверждаём что эта штука полюбому такого типа
 func('string' as any as number)
 
+func('string' as any)
+func('string' as unknown)
+
 let shit: unknown = ''
 shit = 2
 
