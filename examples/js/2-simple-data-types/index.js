@@ -19,4 +19,3 @@ console.log(NaN, typeof NaN)
 const nan2 = 'выфвыф' - 2
 console.log(nan2, typeof nan2)
 
-

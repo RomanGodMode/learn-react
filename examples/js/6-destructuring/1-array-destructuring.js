@@ -19,10 +19,3 @@ console.log('other', other)
 // }
 //
 // func(1, 2, 3)
-
-
-// const obj = {
-//   0: 42
-// }
-// console.log('obj', obj)
-// console.log(obj[0]);
